@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": { "url": "test.csv" },
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "lab", "type": "nominal"},
+      "x": {
+        "aggregate": "count",
+        "field": "project",
+        "type": "quantitative",
+        "axis": {
+          "title": "Project count"
+        }
+      }
+    }
+}
